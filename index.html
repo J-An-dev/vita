@@ -112,7 +112,7 @@
                                 <div class="item mb-3">
                                     <div class="item-heading row align-items-center mb-2">
                                         <h4 class="item-title col-12 col-md-6 col-lg-6 mb-2 mb-md-0">Graduate Course Assistant</h4>
-                                        <div class="item-meta col-12 col-md-6 col-lg-6 text-muted text-left text-md-right">Department of Computer Science, Columbia University | Sep. 2020 - Dec. 2020</div>
+                                        <div class="item-meta col-12 col-md-6 col-lg-6 text-muted text-left text-md-right">Department of Computer Science, Columbia University &nbsp; | &nbsp; Sep. 2020 - Dec. 2020</div>
                                     </div>
                                     <div class="item-content">
                                         <p></p>
@@ -129,7 +129,7 @@
                                 <div class="item mb-3">
                                     <div class="item-heading row align-items-center mb-2">
                                         <h4 class="item-title col-12 col-md-6 col-lg-6 mb-2 mb-md-0">Graduate Research Assistant</h4>
-                                        <div class="item-meta col-12 col-md-6 col-lg-6 text-muted text-left text-md-right">Digital Video Multimedia Lab, Columbia University | Feb. 2020 - Jul. 2020</div>
+                                        <div class="item-meta col-12 col-md-6 col-lg-6 text-muted text-left text-md-right">Digital Video Multimedia Lab, Columbia University &nbsp; | &nbsp; Feb. 2020 - Jul. 2020</div>
                                     </div>
                                     <div class="item-content">
                                         <p></p>
@@ -157,31 +157,54 @@
                                 
                                 <div class="item mb-3">
                                     <div class="item-heading row align-items-center mb-2">
-                                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Project Lorem Ipsum</h4>
-                                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Open Source</div>
+                                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Dining Concierge Chatbot Web Application [<a href="https://github.com/J-An-dev/dining-concierge-chatbot">Code</a>]</h4>
+                                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Sep. 2020 – Oct. 2020</div>
                                     </div>
                                     <div class="item-content">
-                                        <p>You can use this section for your side projects. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                        <p></p>
+                                        <ul class="resume-list">
+                                            
+                                            <li><strong>Restaurant Recommendations</strong>: Based on the conversation with the user, the front-end chatbot interaction identify the user’s preferred cuisine type and dining region on Manhattan. The back-end search through the database and retrieve the top 3 highest-rated restaurants that matched the preference. Then, the APP sends the restaurants’ name, address, rating and price info back to the user’s phone via SMS as the recommendations.</li>
+                                            
+                                            <li><strong>Microservice-Driven Workflow</strong>: The front-end website is hosted on S3 and triggering the Lambdba function using API Gateway. The NLP supported chatbot is developed under Lex and hooked with the Lambda function for validation and response formatting. The user’s preference is stored in a SQS queue and pulled by Elasticsearch as a filter for the restaurant selection. Selected RestaurantIDs would be used as the key to fetch more info from the database in DynamoDB which is collected using Yelp API. Finally, the recommendations would be sent out using SNS.</li>
+                                            
+                                        </ul>
                                     </div>
                                 </div>
                                 
                                 <div class="item mb-3">
                                     <div class="item-heading row align-items-center mb-2">
-                                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Project Sed Fringilla</h4>
-                                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Open Source</div>
+                                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Natural Language Processing Models Implementation [<a href="https://github.com/J-An-dev/nlp-models-implementation">Code</a>]</h4>
+                                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Jun. 2020 – Aug. 2020</div>
                                     </div>
                                     <div class="item-content">
-                                        <p>You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                        <p></p>
+                                        <ul class="resume-list">
+                                            
+                                            <li><strong>Trigram Language Model</strong>: Designed n-grams extracting and counting functions for corpuses. Implemented linear interpolation to compute smoothed trigram probability and log probability of an entire sequence. Applied the trigram model to a TOEFL written-test skill level classification task giving 83% accuracy.</li>
+                                            
+                                            <li><strong>Neural Network Dependency Parser</strong>: Constructed a feed-forward neural network with Keras to predict the transitions of an arc-standard dependency parser using greedy parsing algorithm giving 71% accuracy.</li>
+                                            
+                                            <li><strong>Lexical Substitution</strong>: Found lexical substitutes for individual target words in context from WordNet database. Implementations included overlap computing algorithm – Simplified Lesk, vectorial similarity computing based on Word2Vec embeddings, BERT’s masked language model and its combination with WordNet derived candidates.</li>
+                                            
+                                        </ul>
                                     </div>
                                 </div>
                                 
                                 <div class="item mb-3">
                                     <div class="item-heading row align-items-center mb-2">
-                                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Project Praesent</h4>
-                                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Open Source</div>
+                                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Machine Learning Models Implementation [<a href="https://github.com/J-An-dev/ml-models-implementation">Code</a>]</h4>
+                                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Feb. 2020 – May. 2020</div>
                                     </div>
                                     <div class="item-content">
-                                        <p>You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                        <p></p>
+                                        <ul class="resume-list">
+                                            
+                                            <li><strong>Supervised Learning</strong>: Implemented Ridge Regression and Gaussian Process Regression for vehicles’ mileage per gallon prediction giving 2.10 and 1.89 RMSE value respectively and used degree of freedom for vehicle features impact analysis. Implemented Naive Bayes Classifier and k-NN Classifier for spam/ham email classification giving 87.0% and 87.3% accuracy respectively and used poisson parameters for email words impact analysis.</li>
+                                            
+                                            <li><strong>Unsupervised Learning</strong>: Implemented Matrix Factorization to find similar movies and recommend unrated movies for users based on a MovieLens rating dataset and Nonnegative Matrix Factorization for topic detection on New York Times article dataset. Implemented Markov Chains to rank college football teams based on CFB2019 scores.</li>
+                                            
+                                        </ul>
                                     </div>
                                 </div>
                                 
