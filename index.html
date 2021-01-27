@@ -164,9 +164,39 @@
                                         <p></p>
                                         <ul class="resume-list">
                                             
-                                            <li><strong>Restaurant Recommendations</strong>: Based on the conversation with the user, the front-end chatbot interaction identify the user’s preferred cuisine type and dining region on Manhattan. The back-end search through the database and retrieve the top 3 highest-rated restaurants that matched the preference. Then, the APP sends the restaurants’ name, address, rating and price info back to the user’s phone via SMS as the recommendations.</li>
+                                            <li><strong>Restaurant Recommendations</strong>: Based on the conversation with the user, the front-end chatbot interaction identify the user’s preferred cuisine type and dining region on Manhattan. The back-end search through the database and retrieve the top 3 highest-rated restaurants that matched the preference, and then sends the restaurants’ name, address, rating and price info back to the user’s phone via SMS as the recommendations.</li>
                                             
                                             <li><strong>Microservice-Driven Workflow</strong>: The front-end website is hosted on S3 and triggering the Lambdba function using API Gateway. The NLP supported chatbot is developed under Lex and hooked with the Lambda function for validation and response formatting. The user’s preference is stored in a SQS queue and pulled by Elasticsearch as a filter for the restaurant selection. Selected RestaurantIDs would be used as the key to fetch more info from the database in DynamoDB which is collected using Yelp API. Finally, the recommendations would be sent out using SNS.</li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="item mb-3">
+                                    <div class="item-heading row align-items-center mb-2">
+                                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Smart Door Authentication System <a href="https://github.com/J-An-dev/smart-door">[Code]</a></h4>
+                                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Oct. 2020 – Nov. 2020</div>
+                                    </div>
+                                    <div class="item-content">
+                                        <p></p>
+                                        <ul class="resume-list">
+                                            
+                                            <li><strong>Visitor Authentication</strong>: Integrated with live streaming and face recognition using AWS Kinesis and Rekognition services. Simulates the out-door security camera workflow that authenticates/recognizes the visitor (face infomation) and provides her the access via SMS to a virtual door (or any sensitive resources) after the owner’s permission.</li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="item mb-3">
+                                    <div class="item-heading row align-items-center mb-2">
+                                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Photo Album Application <a href="https://github.com/J-An-dev/photo-album">[Code]</a></h4>
+                                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Nov. 2020 – Dec. 2020</div>
+                                    </div>
+                                    <div class="item-content">
+                                        <p></p>
+                                        <ul class="resume-list">
+                                            
+                                            <li><strong>Photo Uploading &amp; Searching</strong>: Integrated with AWS Lex, Elasticsearch and Rekognition services, support uploading photos to the album and the back-end service would automatically analyze the objects in the photos and create index (labels) for searching. Then, users could search photos using natural language via both text and voice.</li>
                                             
                                         </ul>
                                     </div>
@@ -337,7 +367,7 @@
                                     
                                     <li class="mb-2">Meditation</li>
                                     
-                                    <li class="mb-2">Coding (not that much)</li>
+                                    <li class="mb-2">Coding</li>
                                     
                                 </ul>
 
