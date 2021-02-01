@@ -118,9 +118,9 @@
                                         <p></p>
                                         <ul class="resume-list">
                                             
-                                            <li><strong>Teaching and Learning Facilitation</strong>: Served for the Columbia’s best-known Databases class (by <a href="https://www.engineering.columbia.edu/faculty/donald-ferguson">Prof. Donald Ferguson</a>) with 200+ enrollment. Involved in homewrok &amp; exam grading, maintaining grading scripts written in Python and conducting weekly office hour / recitation.</li>
+                                            <li><strong>Teaching and Learning Facilitation</strong>: Served for the Columbia’s best-known Databases class (by <a href="https://www.engineering.columbia.edu/faculty/donald-ferguson">Prof. Donald Ferguson</a>) with 200+ enrollments. Involved in homewrok &amp; exam grading, maintaining grading scripts written in Python and conducting weekly office hour / recitation.</li>
                                             
-                                            <li><strong>Highest Evaluated</strong>: Among 11 assistants, received the highest overall quality rating (mean: 4.43/5, median 5/5) and highest response rate (18.53%) based on student evaluations.</li>
+                                            <li><strong>Highest Evaluated</strong>: Among 11 assistants, received the highest overall quality rating (mean: 4.43/5, median 5/5) and highest response rate (18.53%) based on the student evaluations.</li>
                                             
                                         </ul>
                                     </div>
@@ -135,9 +135,9 @@
                                         <p></p>
                                         <ul class="resume-list">
                                             
-                                            <li><strong>Dataset Retrieval and Processing</strong>: Designed monologue videos searching and retrieval application using YouTube API and youtube-dl in Python. Implemented face recognition API to crop video frames around speakers’ faces and removed unrelated intervals using FFmpeg to achieve a nearly 100GB clean dataset. <a href="https://github.com/J-An-dev/monologue-dataset">[Code]</a></li>
+                                            <li><strong>Dataset Retrieval and Processing</strong>: Designed monologue videos searching and retrieval application using YouTube API and youtube-dl in Python. Implemented face recognition API to crop video frames around speakers’ face and removed unrelated intervals using FFmpeg to achieve a nearly 100GB clean dataset. <a href="https://github.com/J-An-dev/monologue-dataset">[Code]</a></li>
                                             
-                                            <li><strong>Face-Speech Bridging</strong>: Extended an existing algorithm to reconstruct speech from silent video of talking faces and reconstruct talking faces solely from speech sequences by training two mutual autoencoders for video &amp; audio.</li>
+                                            <li><strong>Face-Speech Bridging</strong>: Extended the existing algorithm to reconstruct speeches from silent videos of talking faces and reconstruct talking faces solely from speech sequences by training two mutual autoencoders for video &amp; audio.</li>
                                             
                                         </ul>
                                     </div>
@@ -164,7 +164,7 @@
                                         <p></p>
                                         <ul class="resume-list">
                                             
-                                            <li><strong>Restaurant Recommendations</strong>: Based on the conversation with the user, the front-end chatbot interaction identify the user’s preferred cuisine type and dining region on Manhattan. The back-end search through the database and retrieve the top 3 highest-rated restaurants that matched the preference, and then sends the restaurants’ name, address, rating and price info back to the user’s phone via SMS as the recommendations.</li>
+                                            <li><strong>Restaurant Recommendations</strong>: Based on the conversation with the user, the front-end NLP supported chatbot identifies the user’s preferred cuisine type and dining region on Manhattan. The back-end services search through the database and retrieve the top 3 highest-rated restaurants that matched the preference, and then send the restaurants’ name, address, rating and price info back to the user’s phone via SMS as the recommendations.</li>
                                             
                                             <li><strong>Microservice-Driven Workflow</strong>: The front-end website is hosted on S3 and triggering the Lambdba function using API Gateway. The NLP supported chatbot is developed under Lex and hooked with the Lambda function for validation and response formatting. The user’s preference is stored in a SQS queue and pulled by Elasticsearch as a filter for the restaurant selection. Selected RestaurantIDs would be used as the key to fetch more info from the database in DynamoDB which is collected using Yelp API. Finally, the recommendations would be sent out using SNS.</li>
                                             
@@ -189,7 +189,7 @@
                                 
                                 <div class="item mb-3">
                                     <div class="item-heading row align-items-center mb-2">
-                                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Photo Album Application <a href="https://github.com/J-An-dev/photo-album">[Code]</a></h4>
+                                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Photo Album Web Application <a href="https://github.com/J-An-dev/photo-album">[Code]</a></h4>
                                         <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Nov. 2020 – Dec. 2020</div>
                                     </div>
                                     <div class="item-content">
@@ -197,6 +197,21 @@
                                         <ul class="resume-list">
                                             
                                             <li><strong>Photo Uploading &amp; Searching</strong>: Integrated with AWS Lex, Elasticsearch and Rekognition services, support uploading photos to the album and the back-end service would automatically analyze the objects in the photos and create index (labels) for searching. Then, users could search photos using natural language via both text and voice.</li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="item mb-3">
+                                    <div class="item-heading row align-items-center mb-2">
+                                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Real-time Credit Card Fraud Detection Pipeline <a href="https://github.com/J-An-dev/real-time-fraud-detection">[Code]</a></h4>
+                                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Dec. 2020 – Jan. 2021</div>
+                                    </div>
+                                    <div class="item-content">
+                                        <p></p>
+                                        <ul class="resume-list">
+                                            
+                                            <li><strong>Pipeline Workflow</strong>: A Kafka topic continusly produces the simulated transaction records that consumed by a Spark Streaming job. The straming job would predict whether these transactions are fraud or not baed on the pre-trained Spark ML models and then save the classified records into the database. Display the frand and non-fraud transactions in real-time on the dashboard web page by using the Spring Boot framewoork. Meanwhile, implemented two REST APIs that could easily retrieve the customer&rsquo;s information and create the transaction statement for each customer with the Flask framework.</li>
                                             
                                         </ul>
                                     </div>
@@ -219,7 +234,7 @@
                                             
                                             <li><strong>Lexical Substitution</strong>: Found lexical substitutes for individual target words in context from WordNet database. Implementations included overlap computing algorithm – Simplified Lesk, vectorial similarity computing based on Word2Vec embeddings, BERT’s masked language model and its combination with WordNet derived candidates.</li>
                                             
-                                            <li><strong>Image Captioning</strong>: Created matrices of image representations using the Inception v3 network and read the image captions as a lookup table. Trained an LSTM language generator on the caption data. Added the image input to write an LSTM caption generator, then implemented beam search for the image caption generator.</li>
+                                            <li><strong>Image Captioning</strong>: Created matrices of image representations using the Inception v3 network and read the image captions as a lookup table. Trained an LSTM language generator on the caption data, and added the image input to write an LSTM caption generator. Finally, applied beam search to produce the n highest-scored caption sequences.</li>
                                             
                                         </ul>
                                     </div>
